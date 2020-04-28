@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    
+    <div id="root">
+        <h2>All Tasks</h2>
+        <ul>
+            <div v-for="task in tasks">
+                <task> {{ task.description }} </task>
+            </div>
+        </ul>
+
+        <h2>Incomplete Tasks</h2>
+        <ul>
+            <div v-for="task in incompleteTasks">
+                <li v-text="task.description"></li>
+            </div>
+        </ul>
+
+        <h2>Completed Tasks</h2>
+        <ul>
+            <li v-for="task in completedTasks" v-text="task.description"></li>
+        </ul>
+    </div>
+    
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

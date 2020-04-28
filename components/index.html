@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css">
+
+</head>
+
+<body>
+    <div id="root">
+        <tabs>
+            <tab name="About Us">
+                <h1>Here is some stuff about us</h1>
+            </tab>
+            
+            <tab name="About Our Culture">
+                <h1>Here is some stuff about our culture</h1>
+            </tab>
+            
+            <tab name="About C3P0">
+                <h1>Here is some stuff about our lord and savior C3P0</h1>
+            </tab>
+        </tabs>
+
+        <message title="Hello world" body="Lorem ipsum la da da fa la"></message>
+        <message title="Go away" body="yeah, what he said"></message>
+
+        <modal v-if="showModal" @close="showModal = false">Insert any text</modal>
+        <button @click="showModal = true">Show Modal</button>
+    </div>
+
+
+</body>
+
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<script src="main.js"></script>
+
+</html>
