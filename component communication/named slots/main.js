@@ -17,7 +17,7 @@ Vue.component('modal', {
                 
                 <footer class="modal-card-foot">
                     <slot name="footer">
-                        <a class="button is-primary"Ok</a>
+                        <a class="button is-primary">ok</a>
                     </slot>
                 </footer>
             </div>

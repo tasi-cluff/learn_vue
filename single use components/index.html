@@ -8,14 +8,14 @@
 
 <body>
     <div id="root" class="container">
-        <modal>
-            <template slot="header">A Crappy Title</template>
-            A poopy body
-            <template slot="footer">
-                <a class="button is-primary">Save Changes</a>
-                <a class="button">Cancel</a>
-            </template>
-        </modal>
+
+        <progress-view inline-template>
+            <div>
+                <h1>Your progress is {{ completionRate }}%</h1>
+                <p><button @click="completionRate += 10">Update completion rate</button></p>
+            </div>
+        </progress-view>
+
     </div>
 
     <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
